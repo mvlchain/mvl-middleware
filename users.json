@@ -1,0 +1,16 @@
+[
+  {
+    "email": "drh@snu.ac.kr",
+    "account": "mvler.pdwgeg",
+    "privateKey": "5Jq8kgvNcshV2nvpRVPZSV3f6Rno2Fi7MuWyps2keZKDaajVpMz",
+    "publicKey": "EOS5QvyEA8hmnWzUkkmY6SBadd1avfxsjaMpDNWM2u8g217i1Uenb",
+    "id": 1
+  },
+  {
+    "email": "drh2@snu.ac.kr",
+    "account": "mvler.lncqlv",
+    "privateKey": "5JbYXAsm82PikhhkcWPpo8mez5uDJSL8LSHbFQkJezYL6vQiDza",
+    "publicKey": "EOS7zuqAzdN764GePuaVBQCJantPMSyLVBjxYzM4qEJZCW6wfVeJm",
+    "id": 2
+  }
+]
