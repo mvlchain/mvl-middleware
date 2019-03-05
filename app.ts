@@ -13,6 +13,7 @@ import routes from './api/routes';
 import InMemoryMVLLogRepository from "./external/repositories/inmemory/mvllog_repository";
 import SequelizeUserRepository from "./external/repositories/sequelize/user_repository";
 import CreateNewUserUsecase from "./usecases/create_new_user_usecase";
+import GetUserUsecase from "./usecases/get_user_usecase";
 import IssueMvpToUserUsecase from "./usecases/issue_mvp_to_user_usecase";
 import UsersController from "./api/controllers/users_controller";
 import config from "config";
@@ -88,6 +89,7 @@ function registerModule(
 // loading biz logic
 container.register({
   createNewUserUsecase: awilix.asClass(CreateNewUserUsecase),
+  getUserUsecase: awilix.asClass(GetUserUsecase),
   issueMvpToUserUsecase: awilix.asClass(IssueMvpToUserUsecase),
 });
 

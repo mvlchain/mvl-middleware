@@ -4,12 +4,12 @@ WORKDIR /usr/app
 
 COPY package.json .
 COPY yarn.lock .
-RUN yarn install --frozen-lockfile --production=false
+RUN yarn install --frozen-lockfile --production=true
 RUN yarn global add sequelize-cli
 
 RUN apk add --update mysql-client
 
-COPY build/server.js build/server.js.map
+COPY build/server.js build/server.js.map ./
 RUN mkdir -p logs
 
 ARG COMMIT_HASH
@@ -55,7 +55,7 @@ ENV NODE_CONFIG '{\
       "maxsize": 104857600,\
       "colorize": false\
     }]\
-  }
+  }\
 }'
 
 ENV PORT 9000

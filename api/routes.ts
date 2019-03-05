@@ -12,6 +12,7 @@ export default function (
   console.log(usersController);
   router.get('/', ((req, res) => res.send("hello world")));
   router.post('/users', usersController.create);
+  router.get('/users/:uuid', usersController.get);
 
   router.get("/test", async (req: Request, res: Response, next: NextFunction) => {
     res.send({ok: true});

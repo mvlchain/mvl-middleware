@@ -56,6 +56,7 @@ module.exports = {
       whitelist: [/util_lib/, /^models/, /models_lib/, /^app/, /^lib/],
     }),
   ],
+  devtool: 'source-map',
   resolve: {
     extensions: ['.webpack.config.js', '.ts', '.tsx', '.js'],
     alias: {
