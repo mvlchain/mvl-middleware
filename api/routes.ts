@@ -11,8 +11,8 @@ export default function (
   console.log(router);
   console.log(usersController);
   router.get('/', ((req, res) => res.send("hello world")));
-  router.post('/users', usersController.create);
-  router.get('/users/:uuid', usersController.get);
+  router.post('/api/v1/users', usersController.create);
+  router.get('/api/v1/users/:uuid', usersController.get);
 
   router.get("/test", async (req: Request, res: Response, next: NextFunction) => {
     res.send({ok: true});
@@ -24,14 +24,14 @@ export default function (
     const point = req.body.point;
 
     if (!uuid) {
-      throw new Error('email is required');
+      throw new Error('uuid is required');
     }
 
     if (isNaN(+point)) {
       throw new Error('point needs to be a number');
     }
 
-    await usecase.execute(uuid, point);
+    await usecase.execute(uuid, +point);
 
     res.send({ok: true});
   });
