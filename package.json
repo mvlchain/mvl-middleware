@@ -47,7 +47,7 @@
     "mysql2": "^1.6.5",
     "node-fetch": "^2.3.0",
     "reflect-metadata": "^0.1.13",
-    "sequelize": "^4.43.0",
+    "sequelize": "^5.15.1",
     "sequelize-typescript": "^0.6.7",
     "source-map-support": "^0.5.10"
   }
