@@ -42,7 +42,7 @@
     "config": "^3.0.1",
     "cors": "^2.8.5",
     "eosjs": "v20.0.0-beta3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-wrap-async": "^1.0.3",
     "mysql2": "^1.6.5",
     "node-fetch": "^2.3.0",
